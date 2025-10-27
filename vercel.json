@@ -3,19 +3,10 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "installCommand": "npm install",
-  "routes": [
+  "rewrites": [
     {
-      "src": "/assets/(.*)",
-      "dest": "/dist/assets/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/dist/$1"
-    },
-    {
-      "src": "/(.*)",
-      "status": 200,
-      "dest": "/dist/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ],
   "cleanUrls": true,
