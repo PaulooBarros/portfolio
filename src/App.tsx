@@ -7,12 +7,14 @@ import { ProjectsSection } from "./components/ProjectsSection";
 import { SkillsSection } from "./components/SkillsSection";
 import { ContactSection } from "./components/ContactSection";
 import { Footer } from "./components/Footer";
+import CursorLight from "./components/CursorLight"; // ✅ importe o efeito
 
 export default function App() {
   return (
-    <div className="dark min-h-screen bg-background text-foreground">
+    <div className="dark min-h-screen bg-background text-foreground relative overflow-hidden">
       <Navbar />
-      <main>
+      <CursorLight /> {/* efeito de luz - não bloqueia cliques */}
+      <main className="relative z-10">
         <HeroSection />
         <AboutSection />
         <ExperienceSection />
@@ -23,5 +25,6 @@ export default function App() {
       <Footer />
       <Toaster />
     </div>
+
   );
 }

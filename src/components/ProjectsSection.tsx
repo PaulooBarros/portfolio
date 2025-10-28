@@ -25,7 +25,7 @@ const projects = [
     title: "Casa do Plug",
     description: "E-commerce moderno para loja de eletrônicos...",
     image: "/assets/casadoplug.png", // ✅ Caminho correto
-    link: "https://vercel.com/paulo-barros-projects/casadoplug",
+    link: "https://casadoplug.vercel.app/",
     technologies: ["React", "Next.js", "TypeScript", "Node.js"],
   },
 ];
